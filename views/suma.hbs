@@ -1,0 +1,27 @@
+<form action="/suma" method="post">
+  <label for="txtNum1">Primer Numero</label>
+  <input type="text" id="txtNum1" name="txtNum1"
+    value="{{txtNum1}}" placeholder=""
+    />
+    <br />
+
+     <label for="txtNum2">Segundo Numero</label>
+  <input type="text" id="txtNum2" name="txtNum2"
+    value="{{txtNum2}}" placeholder=""
+    />
+    <br />
+
+
+    <input type="submit" value="Enviar" id="btnSubmit"
+      name="btnSubmit"/>
+</form>
+<div>
+  <ul>
+    {{#each msg}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+  </ul>
+
+</div>
